@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card 2</title>
+    <title>Slider in Div</title>
+    <style>
+        * {
+            background: black;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slider {
+            width: 100vw;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: row;
+            /* width: calc(200% + px); Adjust width for seamless looping */
+            animation: move 5s infinite linear;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 20px 10px;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="slider">
+            <div class="images">
+                <img src="1.jpg" alt="">
+                <img src="2.jpg" alt="">
+                <img src="3.jpg" alt="">
+                <img src="7.jpg" alt="">
+                <img src="4.jpg" alt="">
+                <img src="5.jpg" alt="">
+                <img src="6.jpg" alt="">
+                <img src="7.jpg" alt="">
+                <img src="8.jpg" alt="">
+                <img src="9.jpg" alt="">
+                <img src="1.jpg" alt="">
+                <img src="2.jpg" alt="">
+                <img src="7.jpg" alt="">
+                <img src="3.jpg" alt="">
+                <img src="4.jpg" alt="">
+                <img src="5.jpg" alt="">
+                <img src="6.jpg" alt="">
+                <img src="7.jpg" alt="">
+                <img src="8.jpg" alt="">
+                <img src="9.jpg" alt="">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
