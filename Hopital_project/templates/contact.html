@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nearest Hospital Finder</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Nearest Hospital Finder</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nearest-hospital.html">Hospital Near You</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any queries or support. Fill out the form below and we'll get back to you as soon as possible.</p>
+            <div class="contact-form">
+                <form action="submit_contact" method="post">
+
+                <!-- <form action="../submit_form.php" method="post"> -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Our Office</h3>
+                <p>123 Main Street, City, State, ZIP Code</p>
+                <p>Email: info@nearesthospitalfinder.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.5877406446252!2d73.0241232748709!3d26.210085889933318!2m3!
+                    1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418bbae47d9d33%3A0x5e0509f6b5ec275b!2sSector%205%2C%20Jodhpur%2C%20Rajasthan%203
+                    42005!5e0!3m2!1sen!2sin!4v1719933407955!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nearest Hospital Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

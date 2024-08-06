@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearest Hospital - Nearest Hospital Finder</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Nearest Hospital Finder</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nearest-hospital.html">Hospital Near You</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="header">
+      <h1>Find Nearby Hospitals</h1>
+      <div class="author">Project by Deepak Kumar</div>
+    </div>
+    <div class="search-container">
+      <input id="location" type="text" placeholder="Enter location">
+      <input id="disease" type="text" placeholder="Enter disease type">
+      <input id="day" type="date" placeholder="Select meeting day">
+      <button onclick="searchHospitals()">Search</button>
+    </div>
+    <div id="map"></div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Nearest Hospital Finder. All rights reserved.</p>
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCmVuM83ZYXZK-4tFdKQ1M4w-h5nAX5-A&libraries=places&callback=initMap" async defer></script>
+  <script src="../static/script.js"></script>
+</body>
+</html>
